@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float and Clear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@1,100&display=swap" rel="stylesheet" />
+  <style>
+    *{
+
+    }
+
+    body{
+      font-family: 'Victor Mono', monospace;
+    }
+
+    .container{
+      width: 900px;
+      border: 3px solid purple;
+      margin: 33px auto;
+      background-color: rgb(244, 226, 210);
+    }
+
+    .item{
+      border: 3px solid grey;
+      margin: 12px 3px;
+      padding: 12px 3px;
+      background-color: rgb(243, 225, 225);
+    }
+
+    #fruit{
+      float: left;
+      width: 48%;
+    }
+
+    #computer{
+      float: left;
+      width: 48%;
+    }
+
+    #stationary{
+      /* float: left; */
+      clear: left;
+      width: 100%;
+    }
+
+    p, h3{
+      text-align: right;
+    }
+
+    h1{
+      margin: 23px auto;
+      width: 455px;
+    }
+
+  </style>
+</head>
+<body>  
+  <div class="container">
+    <h1>Welcome to my store</h1>
+    <div id="fruit" class="item">
+      <h3>Fruit</h3>
+      <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ab, minima veritatis repudiandae excepturi quibusdam explicabo veniam aut ipsum consectetur quasi velit eligendi eaque beatae itaque corrupti voluptates corporis nemo nulla atque quaerat! At? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nisi mollitia odio cum accusamus nemo officia quae dolor cupiditate iste ab ad libero, eos iusto, assumenda doloribus. Magnam, eaque tempore.</p>
+    </div>
+
+    <div id="computer" class="item">
+      <h3>Computer</h3>
+      <p id="computerpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ab, minima veritatis repudiandae excepturi quibusdam explicabo veniam aut ipsum consectetur quasi velit eligendi eaque beatae itaque corrupti voluptates corporis nemo nulla atque quaerat! At? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente iusto facilis ab sed? Obcaecati laudantium ducimus qui numquam, recusandae ipsa. Quas aperiam omnis voluptate minus in, ipsa reprehenderit accusamus.</p>
+    </div>
+
+    <div id="stationary" class="item">
+      <h3>Stationary</h3>
+      <p id="stationarypara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ab, minima veritatis repudiandae excepturi quibusdam explicabo veniam aut ipsum consectetur quasi velit eligendi eaque beatae itaque corrupti voluptates corporis nemo nulla atque quaerat! At?</p>
+    </div>
+  </div>  
+</body>
+</html>
